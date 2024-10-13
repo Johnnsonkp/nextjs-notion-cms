@@ -37,3 +37,18 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+#github folder
+/.github
+/Users/johnnsonkp/projects/brainDump2.0/.github
+
+#original readme
+readmeCopy.md 
+
+#License 
+license
+/Users/johnnsonkp/projects/brainDump2.0/license
+
+#contributing
+contributing.md
+/Users/johnnsonkp/projects/brainDump2.0/contributing.md
