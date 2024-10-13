@@ -11,7 +11,8 @@ export default siteConfig({
 
   // basic site info (required)
   name: 'CHINONSO.io',
-  domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
+  // domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
+  domain: 'nextjs-notion-cms-git-main-johnnsonkps-projects.vercel.app',
   author: 'John Nkpolukwu',
 
   // open graph metadata (optional)
