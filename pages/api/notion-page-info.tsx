@@ -1,7 +1,6 @@
-import { NextApiRequest, NextApiResponse } from 'next'
+import * as libConfig from '@/lib/config'
 
-import got from 'got'
-import { PageBlock } from 'notion-types'
+import { NextApiRequest, NextApiResponse } from 'next'
 import {
   getBlockIcon,
   getBlockTitle,
@@ -10,10 +9,11 @@ import {
   parsePageId
 } from 'notion-utils'
 
-import * as libConfig from '@/lib/config'
+import { NotionPageInfo } from '@/lib/types'
+import { PageBlock } from 'notion-types'
+import got from 'got'
 import { mapImageUrl } from '@/lib/map-image-url'
 import { notion } from '@/lib/notion-api'
-import { NotionPageInfo } from '@/lib/types'
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method !== 'POST') {
@@ -123,7 +123,7 @@ async function isUrlReachable(url: string | null): Promise<boolean> {
   if (!url) {
     return false
   }
-
+  
   try {
     await got.head(url)
     return true
@@ -149,6 +149,5 @@ async function getCompatibleImageUrl(
       }
     }
   }
-
   return image
 }

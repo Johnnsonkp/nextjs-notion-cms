@@ -10,22 +10,22 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'CHINONSO.io',
+  name: 'CHINONSO.io/blog',
   // domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
   domain: 'nextjs-notion-cms-git-main-johnnsonkps-projects.vercel.app',
   author: 'John Nkpolukwu',
 
   // open graph metadata (optional)
-  description: 'A simple blogging app built with Next.js using Notion as a CMS',
+  description: 'Welcome to my blogging site. Follow me on my programming joining, one blog post as a time.',
 
   // social usernames (optional)
-  twitter: '#',
+  // twitter: '#',
   github: 'Johnnsonkp',
 
   linkedin: 'john-nkpolukwu-521201138',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
-  youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
+  youtube: '@chinonso_io', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
@@ -50,7 +50,6 @@ export default siteConfig({
   //   '/bar': '0be6efce9daf42688f65c76b89f8eb27'
   // }
   pageUrlOverrides: null,
-
   // whether to use the default notion navigation style or a custom one with links to
   // important pages. To use `navigationLinks`, set `navigationStyle` to `custom`.
   // navigationStyle: 'default',
@@ -62,16 +61,15 @@ export default siteConfig({
     },
     {
       title: 'Projects',
-      pageId: '22e4f87845a44e70830a976b16a27ed2'
+      pageId: '11b0daab79388016ba36c2664a923ec0'
     },
-    {
-      title: 'Blog',
-      pageId: '11b0daab793880eaa33fe57b695d5a6e'
-    },
+    // {
+    //   title: 'Blog',
+    //   pageId: '11b0daab793880eaa33fe57b695d5a6e'
+    // },
     {
       title: 'Contact',
       pageId: '22e4f87845a44e70830a976b16a27ed2'
     },
-
   ]
 })
